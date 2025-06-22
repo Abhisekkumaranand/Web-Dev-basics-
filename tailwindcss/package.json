@@ -1,0 +1,17 @@
+{
+  "name": "tailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "postcss.config.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8"
+  }
+}

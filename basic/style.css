@@ -1,0 +1,194 @@
+/*1. RESET STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. GLOBAL STYLES */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 3. HEADER & NAVIGATION */
+header {
+    background: #222;
+    color: white;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+nav ul li a:hover, .active {
+    color: #129d47;
+}
+
+#dark-mode-toggle {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* 4. HERO SECTION */
+.hero {
+    text-align: center;
+    background: #5584b6;
+    color: white;
+    padding: 60px 0;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: white;
+    color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.9s;
+}
+
+.hero .btn:hover {
+    background: #0056b3;
+    color: white;
+}
+
+/* 5. FEATURES SECTION */
+.features {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.feature {
+    width: 40%;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 6. FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* 7. DARK MODE */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode header {
+    background: #1a1616;
+}
+
+.dark-mode .hero{
+    background-color: #444;
+    color: #f9f9f9;
+}
+
+.dark-mode .feature{
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+.dark-mode footer {
+    background: #111;
+}
+
+.dark-mode 
+.hero .btn:hover {
+    background: #111;
+    color: white;
+}
+
+.dark-mode 
+#dark-mode-toggle .btn:hover {
+    background: #f5f2f2;
+    color: rgb(10, 6, 6);
+}
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* --------------------------------
+   💻 Tablets & Small Screens (≤ 900px)
+--------------------------------- */
+@media (max-width: 900px) {
+    .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

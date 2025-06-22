@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+.btn{
+    background-color: white;
+    color: black;
+    border: 5px;
+    padding: 2px;
+    justify-content: center;
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
+input[type='text']{
+    min-width: 23vh;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+/* 1. RESET STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. GLOBAL STYLES */
+ body {
+   
+    background-color: #00000000;
+    color: #333;
+    line-height: 1.6;
+} 
+* 
+.container {
+    background-color:#1a242841;
+    color: #000;
+    max-width: 100%;
+   
+    margin: auto;
+    padding: 20px;
+} 
+.conBtn{
+    background-color: #000;
+    color: white;
+    border-style:  2px solid white;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* 3. HEADER & NAVIGATION *//
+header {
+    background-color: #222;
+    color: white;
+    padding: 15px 0;
+}
+nav {
+    height: 60px; /* default 50-60px */
+    background-color: #333;
+    display: flex;
+    align-items: center; /* center items vertically */
+    padding: 20px; /* left and right spacing */
+  }
+
+  nav div{
+    color: rgb(255, 255, 255);
+   font-size: 2rem;
+   justify-content: center;
+   
+    
+  }
+.logo img{
+    
+    width: 35px;
+    filter: invert();
+    
+  }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    
+  
+    
+  
+}
+
+nav ul li a {
+    align-items: right;
+    justify-content: end;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+   
+  
+}
+
+nav ul li a:hover, .active {
+    color: #007bff;
+}
+
+main{
+
+     padding: auto;
+    min-height:80vh ;
+}
+
+footer{
+    font-size: small;
+    font-family: sans-serif;
+    font-weight: 100;
+    background: #000;
+    color: white;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+@media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items:start;
+      height: auto;
+      
+    
+      
+    }
+    nav div{
+        font-size: 1.5rem;
+    }
+    .logo img{
+        
+        width: 25px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      padding: 0,0,3px;
+    }
+    nav ul li a{
+       
+
+    }
+
+    nav ul li{
+        align-items: start;
+        justify-content: start;
+    }
+
+    .container{
+         
+    
+            background-color:#1a242841;
+            color: #000;
+            font-size: 10px;
+            max-width: 100%;
+           
+            margin: auto;
+            padding: 20px;
+        
+    }
+  }
